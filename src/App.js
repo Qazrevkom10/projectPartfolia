@@ -12,7 +12,7 @@ import nightsky from "./LottieFiles/night-sky.json";
 import HashLoader from "react-spinners/HashLoader";
 import Admin from "./Components/Admin";
 import Context from "./context";
-
+import Hoc from './HOC/hoc'
 function App() {
     const [Loading, SetLoading] = useState(true);
     const[user,SetUser]=useState(null);

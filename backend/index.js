@@ -19,8 +19,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(cookieParser());
 app.use(cors({
     credentials: true,
-    origin: ['http://localhost:3000', 'http://localhost:8080', 'http://localhost:4200',
-        'https://studio.apollographql.com', 'https://chat-frontend-1.herokuapp.com'],
+    origin: "*S",
 }));
 
 

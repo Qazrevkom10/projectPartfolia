@@ -2,7 +2,7 @@ import React from 'react';
 import {Navigate} from "react-router-dom";
 
 const AuthRequire = ({children}) => {
-    let user
+    let user = 'test'
     if (!user)
         return <Navigate to={'/'}/>
     return children
