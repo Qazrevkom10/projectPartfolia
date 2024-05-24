@@ -1,0 +1,26 @@
+
+type User {
+  _id: String,
+  lastName: String,
+  firstName: String,
+  email: String,
+  createdAt: String,
+  updatedAt: String,
+}
+
+type Task {
+  _id: String,
+  title: String,
+  status: String,
+  description: String,
+  created_at: String,
+  updated_at: String,
+
+}
+
+type Query {
+  helloWorld: String,
+  getUsers: [User],
+  getUser(id: String): User
+  getTasks: [Task],
+}
