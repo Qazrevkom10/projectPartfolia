@@ -13,8 +13,8 @@ const Home = () => {
       <div className='HomePage'>
 
         <div className='HomeText'>
-          <h1>всем привет!</h1>
-          <h1>Я <b>Муканбет Ильяс</b></h1>
+          <h1>HELLO!</h1>
+          <h1>Я <b>Mukanbet Iliyas</b></h1>
           <Typed/>   
         </div>
 
@@ -24,23 +24,22 @@ const Home = () => {
 
       <div className='AboutPage'>
         <div className='AboutText'>
-          <h1 className='AboutTextHeading'>Краткое введение </h1>
+          <h1 className="Name">About the title of the text</h1>
           <p>
-            Мне нравится процесс превращения сырой идеи в веб-сайт или продукт
-            это влияет на жизни людей.
-            Я хочу заниматься работой, которая бросает вызов мне как разработчику, и которой я могу
-            гордиться.<br /><br />
-            Я работаю с <b>React</b>, <b>Node</b>, <b>MongoDb</b>, <b>Express</b> и <b>Git</b>.<br /><br />
-            Я люблю пить кофе и смотреть фильмы.<br />
-             <CiCoffeeCup style={{scale:"1.5", rotate:"15deg"}}/>
+            I like the process of turning a raw idea into a website or product that affects people's lives.
+            I want to do a job that challenges me as a developer and that I can be proud of.<br/><br/>
+            I work with <b>React</b>, <b>Node</b>, <b>MongoDB</b>, <b>Express</b>, and <b>Git</b>.<br/><br/>
+            I like to drink coffee and watch movies.
           </p>
-        </div>
-        <Tilt>
-          <img className='Avatar' src={Avatar} alt="" />
-        </Tilt>
+          <CiCoffeeCup style={{scale: "1.5", rotate: "15deg"}}/>
+
       </div>
+      <Tilt>
+        <img className='Avatar' src={Avatar} alt=""/>
+      </Tilt>
     </div>
-  )
+</div>
+)
 }
 
 export default Home

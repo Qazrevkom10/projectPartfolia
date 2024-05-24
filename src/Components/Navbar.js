@@ -50,9 +50,9 @@ const Nav = ({user}) => {
             </div>
 
             <ul className='NavbarLinks'>
-                <li onClick={hideMenu}><Link to="/"><AiOutlineHome/>Главная</Link></li>
+                <li onClick={hideMenu}><Link to="/"><AiOutlineHome/>Home</Link></li>
                 <li onClick={hideMenu}><Link to="/About"><BsPerson/>Cайте</Link></li>
-                <li onClick={hideMenu}><Link to="/Project"><BsCodeSlash/> Проэкты</Link></li>
+                <li onClick={hideMenu}><Link to="/Project"><BsCodeSlash/> Проекты</Link></li>
                 <li onClick={hideMenu}><Link to="/Resume"><CgFileDocument/>Резюме</Link></li>
                 <li onClick={hideMenu}><Link to="/admin">{user ? user.lastName : 'Админ'}
                 </Link></li>

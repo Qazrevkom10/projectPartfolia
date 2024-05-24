@@ -6,7 +6,7 @@ const Admin = ({setUser}) => {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const login = (e) => {
-        let url = 'http://172.20.10.2:8787/api/login';
+        let url = 'http://192.168.0.100:8787/api/login';
         e.preventDefault();
         console.log(email, password)
         fetch(url, {

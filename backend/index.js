@@ -19,8 +19,9 @@ app.use(express.urlencoded({extended: true}));
 app.use(cookieParser());
 app.use(cors({
     credentials: true,
-    origin: "*S",
+    origin: "*",
 }));
+
 
 
 
@@ -28,7 +29,7 @@ const port = process.env.PORT || 5000;
 app.use('/api', routes);
 
 
-server.listen(port, '172.20.10.2');
+server.listen(port, '192.168.0.100');
 
 
 

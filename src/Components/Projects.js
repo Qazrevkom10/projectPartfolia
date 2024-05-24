@@ -14,7 +14,7 @@ const Projects = ({user}) => {
     const [projects, setProjects] = useState([])
     const [created, setCreated] = useState(false)
     const create = () => {
-        let url = 'http://172.20.10.2:8787/api/project';
+        let url = 'http://192.168.0.100:8787/api/project';
         fetch(url, {
             method: 'POST',
             headers: {
@@ -27,7 +27,7 @@ const Projects = ({user}) => {
         })
     }
     useEffect(() => {
-        let url = 'http://172.20.10.2:8787/api/project';
+        let url = 'http://192.168.0.100:8787/api/project';
         fetch(url).then(res => res.json()).then(data => {
             console.log(data)
             setProjects(data.projects)

@@ -9,7 +9,7 @@ const ProjectBox = ({id, projectPhoto, projectName, url, desc, setCreated, user}
     const [photo, setPhoto] = useState(projectPhoto)
     const [link, setLink] = useState(url)
     const deleteProject = async () => {
-        const response = await fetch(`http://172.20.10.2:8787/api/project/${id}`, {
+        const response = await fetch(`http://192.168.0.100:8787/api/project/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
@@ -21,7 +21,7 @@ const ProjectBox = ({id, projectPhoto, projectName, url, desc, setCreated, user}
     }
 
     const updateProject = async () => {
-        const response = await fetch(`http://172.20.10.2:8787/api/project/${id}`, {
+        const response = await fetch(`http://192.168.0.100:8787/api/project/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
